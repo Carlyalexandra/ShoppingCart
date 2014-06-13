@@ -1,0 +1,127 @@
+html {
+	background-color: rgb(255,250,250);
+
+}
+
+#wrapper {
+	border:solid;
+	height: 2000px;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: 'Droid Serif';
+}
+
+header {
+
+	border:solid;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border:solid;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 5px;
+}
+
+#sidebar {
+	float:right;
+	display: none;
+	border:solid 1px;
+	border-radius: 10px;
+	height: auto;
+	width: 350px;
+	background-color: #D8E5ED;
+	padding: 10px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+#viewCart {
+	font-size: 14px;
+	font-family: 'Droid Serif';
+
+}
+
+#main {
+	border:solid black 1.5px;
+	margin-top: 10px;
+	margin-left: 20px;
+	height: 680px;	
+	width: 96.5%;
+	
+}
+
+#image {
+	float:left;
+}
+
+#content {
+	float:left;
+	width: 820px;
+}
+
+section {
+	float: left;
+	border:solid orange 2px;
+	width: 320px;
+	margin-left: 30px;
+	text-align: center;
+	font-family: 'Droid Serif';
+	padding: 10px;
+	margin-top: 40px;
+}
+
+h2 {
+	font-family: 'Droid Serif';
+	font-size: 20px;
+}
+
+span {
+	font-size: 15px;
+}
+
+article {
+	text-align: justify;
+	font-size: 15px;
+}
+
+#button {
+	box-shadow: 0px 5px 20px;
+}
+
+h3 {
+	font-family: 'Droid Serif';
+	font-size: 25px;
+	margin-left: 100px;
+}
+
+h4 {
+	font-weight: bold;
+}
+
+table {
+	width: 350px;
+/*	border-spacing: 40px;*/
+	padding-bottom: 20px;
+}
+
+th {
+	font-style: italic;
+	border-bottom: solid 1px grey;
+	padding-bottom: 5px;
+	text-align: left;
+}
+
+td {
+	padding-bottom: 20px;
+	padding-top: 10px;
+/*	text-align: right;*/
+	width: auto;
+}
+
+#grandTotal {
+	border-top: solid 1px;
+	border-color: #A8A8A8;
+}

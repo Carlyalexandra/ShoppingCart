@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping Cart</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="main.css">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	
+	<script src="script.js"></script>
+</head>
+
+
+<body>
+<div id="wrapper">
+
+	<header>
+		<h1>Patio Furniture</h1>
+	</header>
+
+		<!-- <div id="sidebar">
+			<div id="bag">
+			this is where the bag is going so i can see  
+			</div>
+		</div> -->
+
+	<div id="main">
+		<div id="content">
+			<div id="image">
+			<img src="images/chair.jpeg" alt="">
+			</div>
+		
+		<section>
+			<h2 id="whatItem">Rattan Hanging Chair</h2>
+			<br><br>
+			<article>
+			Float this handcrafted pod from living room beams or porch rafters for a vibe that's relazed
+			yet sophisticated. An adjustable chain makes it a cinch to customize the lenght. 
+			</article>
+			<br><br><br><br>
+			<span id="cost">$479.99</span>
+			<br><br>
+			<form action="">
+				<select id="quantity" size="1">
+				    <option>Quantity</option>
+				    <option>1</option>
+				    <option>2</option>
+				    <option>3</option>
+				    <option>4</option>
+				    <option>5</option>
+				    <option>6</option>
+				    <option>7</option>
+				    <option>8</option>
+				    <option>9</option>
+				    <option>10</option>
+				 </select>
+				<br><br>
+				<input id="button" type="image" src="images/addto.png" border="0" name="submit" width="170" height="auto" alt="">
+			</form>
+			<br>
+			<p id="viewCart">View Your Cart</p>
+		</section>
+		</div>
+		<div id="sidebar">
+			<h3>
+				Shopping Cart
+			</h3>
+			<br>
+				<h4>Orders:</h4>
+				<br>
+				<table id="orders">
+				<tr>
+				  <th>Item</th>
+				  <th>Quantity</th>
+				  <th>Item Price</th>
+				  <th>Total Price</th>
+				</tr>
+				<tr>
+				  <!-- <td id="item">Rattan Chair</td>
+				  <td id="amount">2</td>
+				  <td id="price">$475.99</td>
+				  <td id="result" oninput="calculate()"></td> -->
+				</tr>
+				<tr>
+				  <td id="item2">x</td>
+				  <td id="amount2">y</td>
+				  <td id="price2">z</td>
+				  <td id="result2" oninput="calculate()">a</td>
+				</tr>
+				<tr id="grandTotal">
+					<td>Final</td>
+					<td colspan="2"></td>
+					<!-- <td></td> -->
+					<!-- need to add all #td together -->
+					<td id="final">TOTAL</td>
+				</tr>
+				<hr>	
+				</table>	
+		</div>
+	
+	</div>
+</div>	
+</body>
+</html>
