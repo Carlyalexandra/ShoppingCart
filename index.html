@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Shopping Cart</title>
 	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="main.css">
 	
@@ -20,14 +20,34 @@
 
 	<header>
 		<h1>Patio Furniture</h1>
+		<!-- <nav>
+		<ul class="myMenu">
+			<li><h5><a href="">CHAIRS</a></h5>
+				<ul id="hidden">
+					<li><a href="">Outdoor</a></li>
+					<li><a href="">Indoor</a></li>
+					<li><a href="">All Purpose</a></li>
+				</ul>
+			</li>	
+			<li>
+				<h5><a href="">SOFA</a></h5>
+				<ul id="hidden">
+					<li><a href="">Love Seat</a></li>
+					<li><a href="">Sectional</a></li>
+					<li><a href="">Chaise</a></li>
+				</ul>
+			</li>	
+			<li>
+				<h5><a href="">OTTOMAN</a></h5>
+				<ul id="hidden">
+					<li><a href="">Large<a/></li>
+					<li><a href="">Small<a/></li>
+				</ul>
+			</li>	
+		</ul>
+		
+	</nav> -->
 	</header>
-
-		<!-- <div id="sidebar">
-			<div id="bag">
-			this is where the bag is going so i can see  
-			</div>
-		</div> -->
-
 	<div id="main">
 		<div id="content">
 			<div id="image">
@@ -44,23 +64,17 @@
 			<br><br><br><br>
 			<span id="cost">$479.99</span>
 			<br><br>
-			<form action="">
+			<!--<form action="">-->
 				<select id="quantity" size="1">
-				    <option>Quantity</option>
-				    <option>1</option>
-				    <option>2</option>
-				    <option>3</option>
-				    <option>4</option>
-				    <option>5</option>
-				    <option>6</option>
-				    <option>7</option>
-				    <option>8</option>
-				    <option>9</option>
-				    <option>10</option>
+				    <option value="null">Quantity</option>
+				    <option value="1">1</option>
+				    <option value="2">2</option>
+				    <option value="3">3</option>
+				    <option value="4">4</option>
 				 </select>
 				<br><br>
 				<input id="button" type="image" src="images/addto.png" border="0" name="submit" width="170" height="auto" alt="">
-			</form>
+			<!--</form>-->
 			<br>
 			<p id="viewCart">View Your Cart</p>
 		</section>
@@ -72,34 +86,47 @@
 			<br>
 				<h4>Orders:</h4>
 				<br>
-				<table id="orders">
-				<tr>
-				  <th>Item</th>
-				  <th>Quantity</th>
-				  <th>Item Price</th>
-				  <th>Total Price</th>
-				</tr>
-				<tr>
-				  <!-- <td id="item">Rattan Chair</td>
-				  <td id="amount">2</td>
-				  <td id="price">$475.99</td>
-				  <td id="result" oninput="calculate()"></td> -->
-				</tr>
-				<tr>
-				  <td id="item2">x</td>
-				  <td id="amount2">y</td>
-				  <td id="price2">z</td>
-				  <td id="result2" oninput="calculate()">a</td>
-				</tr>
-				<tr id="grandTotal">
-					<td>Final</td>
-					<td colspan="2"></td>
-					<!-- <td></td> -->
-					<!-- need to add all #td together -->
-					<td id="final">TOTAL</td>
-				</tr>
-				<hr>	
-				</table>	
+				<table> <!--main table starts-->
+				 <tr>
+				  <td>
+
+					<table id="orders">
+					<tr>
+					  <th>Item</th>
+					  <th>Qty</th>
+					  <th>Price</th>
+					  <th>Total</th>
+					</tr>
+					<!--<tr>
+					  <td id="item">Rattan Chair</td>
+					  <td id="amount">2</td>
+					  <td id="price">$475.99</td>
+					  <td id="result" oninput="calculate()"></td>
+					</tr>
+					<tr>
+					  <td id="item2">x</td>
+					  <td id="amount2">y</td>
+					  <td id="price2">z</td>
+					  <td id="result2" oninput="calculate()">a</td>
+					</tr>-->
+					</table>
+
+					</td>
+					</tr>
+					<tr>
+					 <td>
+					  
+					  <table style="border:solid 1px #000;">
+					   <tr id="grandTotal">
+						<td>Final</td>
+						<td id="final">TOTAL</td>
+					   </tr>
+					  </table>
+
+
+				   </td>
+				  </tr>
+				 </table> <!--main table ends-->
 		</div>
 	
 	</div>

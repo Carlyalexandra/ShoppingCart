@@ -1,55 +1,68 @@
 $(document).ready(function(){
-	// alert("this is a test")
+	 //alert("this is a test")
 
+$("#button").click(function(){
+	
+	var thisItem = $("#whatItem").html();
+	//document.getElementById("whatItem").innerHTML
+	var thisAmount = $("#quantity").val();
+	console.log(thisAmount)
+	//document.getElementById("quantity").value
+	var thisCost = Number($("#cost").html().replace(/[^0-9\.]+/g,""));
+	
+	var myTotal = "$"+thisAmount * thisCost;
+	
+	console.log(myTotal);
 
-$("button").click(function(){
+	addRow(thisItem, thisAmount, thisCost, myTotal)
+	//calculate here
+
+            
 	
-	var thisItem = ("whatItem").getElementById();
-	var thisAmount = ("quantity").getElementById();
-	var thisCost = ("cost").getElementById();
-	
-	var myTotal = thisAmount() * thisCost();
 
 //this add them to a static row
-		$("#item2").append(thisItem());
-		$("amount2").append(thisAmount());
-		$("#price2").append(thisCost());
-		$("#result2").append(myTotal);
+		// $("#item2").html(thisItem);
+		// $("#amount2").html(thisAmount);
+		// $("#price2").html(thisCost);
+		// $("#result2").html(myTotal);
 
 // but I need to generate cells dynamicall with the add button 
 
- 	function addRow(orders) {
+ 	function addRow(thisItem, thisAmount, thisCost, myTotal) {
  
-            var table = document.getElementById(tableID);
- 
-            var rowCount = table.rows.length;
-            var row = table.insertRow(rowCount);
- 
-            var cell1 = row.insertCell(0);
-            var element1 = document.createElement("input");
-            cell1.appendChild(element1);
- 
-            var cell2 = row.insertCell(1);
-            cell2.innerHTML = rowCount + 1;
- 
-            var cell3 = row.insertCell(2);
-            var element2 = document.createElement("input");
-            cell3.appendChild(element2);
 
-            var cell4 = row.insertCell(2);
-            var element3 = document.createElement("input");
-            cell4.appendChild(element2);
+ 			$("#orders").append("<tr><td>"+thisItem+"</td><td>"+thisAmount+"</td><td>"+thisCost+"</td><td>"+myTotal+"</td></tr>")
+
+            // var table = document.getElementById("#orders");
+ 
+            // var rowCount = table.rows.length;
+            // var row = table.insertRow(rowCount);
+ 
+            // var cell1 = row.insertCell(0);
+            // var element1 = document.createElement("input");
+            // cell1.appendChild(element1);
+ 
+            // var cell2 = row.insertCell(1);
+            // cell2.innerHTML = rowCount + 1;
+ 
+            // var cell3 = row.insertCell(2);
+            // var element2 = document.createElement("input");
+            // cell3.appendChild(element2);
+
+            // var cell4 = row.insertCell(2);
+            // var element3 = document.createElement("input");
+            // cell4.appendChild(element2);
 
 	//and then add the value to the dynamic row
-		$(cell1).append(thisItem());
-		$(cell2).append(thisAmount());
-		$(cell3).append(thisCost());
-		$(cell4).append(myTotal);
+		// $(cell1).append(thisItem());
+		// $(cell2).append(thisAmount());
+		// $(cell3).append(thisCost());
+		// $(cell4).append(myTotal);
 
 	};
 
 //is this where the value
-/*function calculate() {
+function calculate() {
     var myAmount = "td".getElementById("amount").value; 
     var myPrice = "td".getElementById("price").value;
     var result = "td".getElementById("result"); 
@@ -60,14 +73,15 @@ $("button").click(function(){
 	
 function calculate2() {
 	var itemTotal = []
-	for (1 = 0; i < itemTotal; i++) 
+	for (i = 0; i < itemTotal; i++) {
 	//need a function that gets all the values of the result
 
 	//td to push to the array      
 	 itemTotal.push();
-
+	}
 	
-	 int sum = IntStream.of(itemTotal).sum();}*/
+	 ///int sum = IntStream.of(itemTotal).sum();
+	}
 
 
 
@@ -125,4 +139,5 @@ function calculate2() {
 
 //end of docready
 });
+
 

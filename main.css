@@ -91,6 +91,9 @@ article {
 	box-shadow: 0px 5px 20px;
 }
 
+#viewCart {
+	padding: 10px;
+}
 h3 {
 	font-family: 'Droid Serif';
 	font-size: 25px;
@@ -107,19 +110,36 @@ table {
 	padding-bottom: 20px;
 }
 
-th {
+#orders th {
 	font-style: italic;
 	border-bottom: solid 1px grey;
 	padding-bottom: 5px;
 	text-align: left;
+	width:auto;
+
 }
 
-td {
+#orders td {
 	padding-bottom: 20px;
 	padding-top: 10px;
-/*	text-align: right;*/
+	font-size: 14px;
 	width: auto;
 }
+
+#orders td:first-child {
+	font-style: italic;
+
+
+}
+td:nth-child(2) {
+	text-align: left;
+	font-weight: bold;
+}
+
+#order td:nth-child(4) {
+	text-align: right;
+}
+
 
 #grandTotal {
 	border-top: solid 1px;
